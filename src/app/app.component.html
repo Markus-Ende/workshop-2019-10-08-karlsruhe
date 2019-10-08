@@ -1,4 +1,12 @@
-<h1>{{ title }}</h1>
+<!-- <me-title-box [title]="'MEIN TITEL'"></me-title-box>
+<me-title-box title="MEIN TITEL"></me-title-box>
+
+<me-title-box [title]="appTitle"></me-title-box> -->
+
+<me-title-box
+  [title]="appTitle"
+  (titleClick)="appTitle = appTitle + '!'"
+></me-title-box>
 
 <me-mouse-cursor></me-mouse-cursor>
 
